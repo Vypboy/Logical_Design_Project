@@ -122,19 +122,17 @@ void init_system(void)
         //init_timer0(4695);//dinh thoi 1ms sai so 1%
 //        init_timer1(9s390);//dinh thoi 2ms
         init_timer3(46950);//dinh thoi 10ms
-//        init_timer3(18780);
+//        init_timer3(9870);
         //SetTimer0_ms(100);
 //        SetTimer1_ms(100);
         SetTimer3_ms(100); //Chu ky thuc hien viec xu ly input,proccess,output
         init_key_matrix();
 }
 
-
 void System_Elevator(){
     switch (statusElevator)
     {
         case INIT_SYSTEM:
-            //LockDoor();
             BuzzerFunction(0);
             indexOfNumber = 0;
             timeDelay = 0;
@@ -150,14 +148,13 @@ void System_Elevator(){
                 statusElevator = SELECT_FLOOR;
             }
             else if(setfloor()){
-                SetTimer3_ms(3000);
+                SetTimer3_ms(WAITING_TIME);
                 statusElevator=RUN_ELEVATOR;
             }
             break;
         case RUN_ELEVATOR:
             run_Elevator();
             if(isButtonEnter()){
-                indexOfNumber = 0;
                 timeDelay = 0;
                 statusElevator = SELECT_FLOOR;
             }
@@ -179,16 +176,15 @@ void System_Elevator(){
                     timeDelay=0;
                 }
                 else{
-                    SetTimer3_ms(3000);
+                    SetTimer3_ms(WAITING_TIME);
+                    timeDelay=0;
                     flag_floor[numberValue]=1;
                     statusElevator=RUN_ELEVATOR;
                 }
             }
             timeDelay++;
-            if(timeDelay>=500){
-                timeDelay=0;
+            if(timeDelay>=500)
                 statusElevator=INIT_SYSTEM;
-            }
             break;
         case ENTER_PASSWORD:
             BuzzerFunction(0);
@@ -211,8 +207,6 @@ void System_Elevator(){
                 statusElevator = CHECK_PASSWORD;
             if (timeDelay >= 500)
                 statusElevator = INIT_SYSTEM;
-            //if (isButtonEnter())
-            //    statusPassword = INIT_SYSTEM;
             break;
         case CHECK_PASSWORD:
             timeDelay = 0;
@@ -229,7 +223,7 @@ void System_Elevator(){
                 timeDelay=0;
                 if(chang_pass==0){
                     flag_floor[9]=1;
-                    SetTimer3_ms(3000);
+                    SetTimer3_ms(WAITING_TIME);
                     statusElevator = RUN_ELEVATOR;
                 }
                 if(chang_pass==1){
@@ -271,27 +265,22 @@ void System_Elevator(){
             }
             if (indexOfNumber >= 4)
                 statusElevator = CHANGE_PASSWORD;
-            if (timeDelay == 200){
+            if (timeDelay == 200)
                 statusElevator = INIT_SYSTEM;
-                timeDelay=0;
-            }
             break;
         case CHANGE_PASSWORD:
             LcdPrintStringS(0,0,"CHANGE PASSWORD ");
             LcdPrintStringS(1,0,"                ");
             changePassword();
             timeDelay++;
-            if(timeDelay==200){
+            if(timeDelay==200)
                 statusElevator=INIT_SYSTEM;
-                timeDelay=0;
-            }
             break;
         default:
             break;
 
     }
 }
-
 
 unsigned char CheckPassword()
 {
@@ -444,7 +433,11 @@ void BuzzerFunction(int status){
                 //xet tu duoi lên, tang thap nhat se la tang can tim 
                 for(i=present_floor-1;i>=0;i--){
                     if(flag_floor[i]==1) {
-                        if(i!=present_floor-1) next_priority_floor=i; break;
+                        if(status !=WAIT_CASE ) {
+                            if(i!=present_floor-1) next_priority_floor=i; 
+                        }
+                        else next_priority_floor=i;
+                        break;
                     }
                 }
 //                //if there is no people in lower floor pressing , change trend_moving
@@ -453,7 +446,12 @@ void BuzzerFunction(int status){
             case UP_CASE:
                 for(i=present_floor+1;i<NO_OF_FLOOR;i++){
                     if(flag_floor[i]==1) {
-                        if(i!=present_floor+1) next_priority_floor=i; break;
+                        if(status !=WAIT_CASE) {
+                            if(i!=present_floor+1) next_priority_floor=i;  
+                        }
+                        else next_priority_floor=i; 
+                        
+                        break;
                     }
                 }
                 if(next_priority_floor<=present_floor) trend_moving= DOWN_CASE;
