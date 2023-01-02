@@ -88,8 +88,7 @@ void main(void)
 {
 	init_system();
 	while (1)
-	{
-               
+	{             
         // thuc hien cac cong viec duoi day         
         scan_key_matrix_update();  
         System_Elevator();
@@ -359,7 +358,6 @@ void BuzzerFunction(int status){
     //or request Elevator (if you're out Elevator 
     //and standing in this index's floor)
     //return false if there's no person press
-
     int setfloor(){
         int i;     
         for(i=0;i<NO_OF_FLOOR;i++){
@@ -393,44 +391,26 @@ void BuzzerFunction(int status){
             LcdPrintNumS(0, 0, present_floor);
             LcdPrintStringS(0, 2, "GO DOWN        ");
             LcdPrintStringS(1,0,"PRESS * TO OPEN");
-            //LcdPrintNumS(0, 10, present_floor-1);
-            //DisplayLcdScreen();
-            //LcdPrintNumS(0, 10, present_floor);
         }
         else if(status==1){
             DisplayStatus(status);
             LcdPrintNumS(0, 0, present_floor);
             LcdPrintStringS(0, 2, "GO UP          ");
             LcdPrintStringS(1,0,"PRESS * TO OPEN");
-            //LcdPrintNumS(0, 8, present_floor+1);
-            //DisplayLcdScreen();
-            //LcdPrintNumS(0, 8, present_floor);
         }
         else if(status==2){
             DisplayStatus(status);
             LcdPrintNumS(0, 0, present_floor);
             LcdPrintStringS(0,  2,  "WAITING        ");
             LcdPrintStringS(1,0,"PRESS * TO OPEN");
-            //DisplayLcdScreen();
         }
     }
-
-      
-    //note:
-    //case_down: dang di xuong thi uu tien ??n t?ng th?p nh?t
-    // trên ???ng di chuy?n n?u có t?ng pr[i]=1 ta v?n m?(waiting)
-    // nh?ng v?n gi? nguyên giá tr? next_floor
-    //
-    //case_up: t??ng t? khi ?i lên ?u tiên t?ng cao nh?t nh?ng
-    // nh?ng case2 trên ???ng ?i lên ta ko ?oán t?ng có t?ng pr[i]=1 mà
-    // ch? khi thang máy chuy?n sang case_down
     
     //update the value of next_floor   
     void update_next_priority_floor(){
         int i;
         switch(trend_moving){
             case DOWN_CASE:
-                //xet tu duoi lên, tang thap nhat se la tang can tim 
                 for(i=present_floor-1;i>=0;i--){
                     if(flag_floor[i]==1) {
                         if(status !=WAIT_CASE ) {
@@ -440,7 +420,8 @@ void BuzzerFunction(int status){
                         break;
                     }
                 }
-//                //if there is no people in lower floor pressing , change trend_moving
+                //if there is no people in lower floor pressing, 
+                //change trend_moving
                 if(next_priority_floor>=present_floor) trend_moving= UP_CASE;
                 break;
             case UP_CASE:
@@ -463,21 +444,17 @@ void BuzzerFunction(int status){
      
     
     void run_Elevator(){   
-        //setfloor();
         update_next_priority_floor();
         switch(status){
             case INIT:// Elevator is in floor 0
                 Animation(WAIT_CASE);
                 if(setfloor()==1){
                     SetTimer3_ms(WAITING_TIME);
-                    trend_moving =UP_CASE;
                     status = WAIT_CASE;//to set the next_priority_floor
                 }
                 break;
             case DOWN_CASE:
-                Animation(status);
-                
-                trend_moving=status;
+                Animation(status);              
                 //chuyen trang thai
                 /////////////////////////////////////
                 if(flag_timer3==1){   
@@ -485,8 +462,6 @@ void BuzzerFunction(int status){
                     present_floor--;
                     status=DOWN_CASE; 
                 }
-//                if(flag_floor[present_floor]==1 
-//                   || present_floor==next_priority_floor){
                 if(present_floor==next_priority_floor){
                     SetTimer3_ms(WAITING_TIME);
                     status=WAIT_CASE;
@@ -494,10 +469,8 @@ void BuzzerFunction(int status){
                 ///////////////////////////////////
                 break;
             case UP_CASE:
-                Animation(status);
-                
-                trend_moving=status;
-                //chuyen trang thai
+                Animation(status);              
+                //change state
                 /////////////////////////////////////
                 if(flag_timer3==1){    
                     SetTimer3_ms(TRANSITION_TIME);  
@@ -512,20 +485,15 @@ void BuzzerFunction(int status){
                 break;
             case WAIT_CASE://when Elevator come      
                 Animation(status);
-                unsetfloor();//erase flag of the present floor
-                update_next_priority_floor();
+                unsetfloor();//reset flag of the present floor
                 if(flag_timer3==1){
                     SetTimer3_ms(TRANSITION_TIME);
-                    update_next_priority_floor();
                     if(present_floor<next_priority_floor){
                         //keep going down
-                        status=UP_CASE;
-                        trend_moving=UP_CASE;
-                        
+                        status=UP_CASE;                     
                     }
                     else if(present_floor>next_priority_floor){
-                        status=DOWN_CASE;
-                        trend_moving=DOWN_CASE;                        
+                        status=DOWN_CASE;                     
                     }
                     else status=WAIT_CASE;
                 }

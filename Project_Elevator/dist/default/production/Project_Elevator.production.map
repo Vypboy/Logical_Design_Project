@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Thu Dec 29 18:44:27 2022
+Linker Map File - Created Sat Dec 31 13:08:45 2022
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -31,24 +31,24 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
        InterruptVectorLow       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x00004a
               .code_lcd.o       code   0x000068    program   0x000e20
-             .code_main.o       code   0x000e88    program   0x000cd0
-           .code_button.o       code   0x001b58    program   0x00081a
-            .code_timer.o       code   0x002372    program   0x00051c
-        .code_interrupt.o       code   0x00288e    program   0x0001c4
-             .stringtable    romdata   0x002a52    program   0x0000ec
-                     PROG       code   0x002b3e    program   0x0000a6
-               _cinit_scn       code   0x002be4    program   0x00009e
-          .code_fxm3232.o       code   0x002c82    program   0x000070
-         .code_fxd3232u.o       code   0x002cf2    program   0x000048
-         .code_fxd2424u.o       code   0x002d3a    program   0x00003a
-         .code_fxd1616u.o       code   0x002d74    program   0x00002c
-                    .code       code   0x002da0    program   0x000020
-             _startup_scn       code   0x002dc0    program   0x00001c
-         .idata_timer.o_i    romdata   0x002ddc    program   0x000020
-          .idata_main.o_i    romdata   0x002dfc    program   0x00002a
-           .idata_lcd.o_i    romdata   0x002e26    program   0x000061
-        .idata_global.o_i    romdata   0x002e87    program   0x00001c
-        .idata_button.o_i    romdata   0x002ea3    program   0x000028
+             .code_main.o       code   0x000e88    program   0x000ca2
+           .code_button.o       code   0x001b2a    program   0x00081a
+            .code_timer.o       code   0x002344    program   0x00051c
+        .code_interrupt.o       code   0x002860    program   0x0001c4
+             .stringtable    romdata   0x002a24    program   0x0000ec
+                     PROG       code   0x002b10    program   0x0000a6
+               _cinit_scn       code   0x002bb6    program   0x00009e
+          .code_fxm3232.o       code   0x002c54    program   0x000070
+         .code_fxd3232u.o       code   0x002cc4    program   0x000048
+         .code_fxd2424u.o       code   0x002d0c    program   0x00003a
+         .code_fxd1616u.o       code   0x002d46    program   0x00002c
+                    .code       code   0x002d72    program   0x000020
+             _startup_scn       code   0x002d92    program   0x00001c
+         .idata_timer.o_i    romdata   0x002dae    program   0x000020
+          .idata_main.o_i    romdata   0x002dce    program   0x00002a
+           .idata_lcd.o_i    romdata   0x002df8    program   0x000061
+        .idata_global.o_i    romdata   0x002e59    program   0x00001c
+        .idata_button.o_i    romdata   0x002e75    program   0x000028
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -95,11 +95,11 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000011      
-                            0x000018    0x002eca      
+                            0x000018    0x002e9c      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            11984 out of 66584 program addresses used, program memory utilization is 17%
+            11938 out of 66584 program addresses used, program memory utilization is 17%
 
 
 
@@ -109,26 +109,26 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
                 Animation   0x001686    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
            BuzzerFunction   0x001582    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
             CheckPassword   0x0013bc    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-                   D1616S   0x002b60    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x002b6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x002b6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x002b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D2424S   0x002bb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x002bc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x002bbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x002bda    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA1616S   0x002b50    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA2424S   0x002ba0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D1616S   0x002b32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x002b40    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002b3c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x002b52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D2424S   0x002b86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x002b94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x002b90    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x002bac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA1616S   0x002b22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA2424S   0x002b72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
          DisplayLcdScreen   0x0009a6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
         DisplayLcdScreen2   0x000a9e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
       DisplayLcdScreenOld   0x000b24    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
             DisplayStatus   0x001632    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-                 FXD1616S   0x002b3e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x002d74    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD2424S   0x002b8a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x002d3a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                 FXD3232U   0x002cf2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  FXM3232   0x002c82    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                 FXD1616S   0x002b10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x002d46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x002b5c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x002d0c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 FXD3232U   0x002cc4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x002c54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
       InterruptVectorHigh   0x000008    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
        InterruptVectorLow   0x000018    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
                 LcdClearS   0x000948    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
@@ -137,17 +137,17 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
              LcdPrintNumS   0x000be4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
            LcdPrintString   0x0008ce    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
           LcdPrintStringS   0x000e32    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
-             SetTimer0_ms   0x0027ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             SetTimer1_ms   0x002812    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             SetTimer3_ms   0x002850    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer0_ms   0x0027c0    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer1_ms   0x0027e4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer3_ms   0x002822    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
           System_Elevator   0x000f64    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-       ___return_lbl00000   0x002d9e    program     static                          
-       ___return_lbl00000   0x002d72    program     static                          
-       ___return_lbl00000   0x002d38    program     static                          
+       ___return_lbl00000   0x002d70    program     static                          
+       ___return_lbl00000   0x002d44    program     static                          
+       ___return_lbl00000   0x002d0a    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x002cf0    program     static                          
-       ___return_lbl00001   0x002dda    program     static                          
-       ___return_lbl00002   0x002c80    program     static                          
+       ___return_lbl00000   0x002cc2    program     static                          
+       ___return_lbl00001   0x002dac    program     static                          
+       ___return_lbl00002   0x002c52    program     static                          
        ___return_lbl00002   0x00001c    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
                __config_0   0x300001    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
@@ -162,46 +162,46 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
                __config_8   0x30000b    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
                __config_9   0x30000c    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __string_0   0x002b2d    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_1   0x002b1c    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_10   0x002a92    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_11   0x002a82    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_12   0x002a72    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_13   0x002a62    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_14   0x002a52    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_2   0x002b0b    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_3   0x002afa    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_4   0x002ae9    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_5   0x002ad8    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_6   0x002ad6    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_7   0x002ac5    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_8   0x002ab4    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_9   0x002aa3    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-            __zero_memory   0x002da0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x002be4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               __string_0   0x002aff    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_1   0x002aee    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_10   0x002a64    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_11   0x002a54    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_12   0x002a44    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_13   0x002a34    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_14   0x002a24    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_2   0x002add    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_3   0x002acc    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_4   0x002abb    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_5   0x002aaa    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_6   0x002aa8    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_7   0x002a97    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_8   0x002a86    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_9   0x002a75    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+            __zero_memory   0x002d72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x002bb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x002d34    program     static                          
-                   _false   0x002d6e    program     static                          
-                 _startup   0x002dc0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-          button_delay_ms   0x0021c4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+                   _false   0x002d06    program     static                          
+                   _false   0x002d40    program     static                          
+                 _startup   0x002d92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+          button_delay_ms   0x002196    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
            changePassword   0x00147c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-                compare_l   0x002db6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x002c56    program     static                          
-            copy_one_byte   0x002c5c    program     static                          
+                compare_l   0x002d88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x002c28    program     static                          
+            copy_one_byte   0x002c2e    program     static                          
                  delay_ms   0x000e96    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-                     done   0x002c80    program     static                          
-             done_copying   0x002c6a    program     static                          
-                  endloop   0x002d9a    program     static                          
-                 high_isr   0x002982    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-            init_ext_int0   0x002896    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-           init_interrupt   0x00288e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-          init_key_matrix   0x001b58    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+                     done   0x002c52    program     static                          
+             done_copying   0x002c3c    program     static                          
+                  endloop   0x002d6c    program     static                          
+                 high_isr   0x002954    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+            init_ext_int0   0x002868    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+           init_interrupt   0x002860    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+          init_key_matrix   0x001b2a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
                  init_lcd   0x000208    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
               init_system   0x000f1e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              init_timer0   0x002372    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer1   0x0024b6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer2   0x002600    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer3   0x002638    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer0   0x002344    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer1   0x002488    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer2   0x0025d2    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer3   0x00260a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
             isButtonEnter   0x001562    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
            isButtonEnter1   0x001572    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
            isButtonNumber   0x0014be    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
@@ -221,36 +221,36 @@ Linker Map File - Created Thu Dec 29 18:44:27 2022
           lcd_write_4bits   0x0003ec    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
             lcd_write_cmd   0x000432    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
            lcd_write_data   0x00046e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
-                     loop   0x002d46    program     static                          
-                     loop   0x002d7e    program     static                          
-                     loop   0x002d00    program     static                          
-                     loop   0x002dd0    program     static                          
-                   loop_h   0x002dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x002db8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  low_isr   0x00289e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+                     loop   0x002d18    program     static                          
+                     loop   0x002d50    program     static                          
+                     loop   0x002cd2    program     static                          
+                     loop   0x002da2    program     static                          
+                   loop_h   0x002d80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x002d8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x002870    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
                      main   0x000e88    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
              run_Elevator   0x001980    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-          scan_key_matrix   0x001b60    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-     scan_key_matrix_demo   0x00224c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-   scan_key_matrix_update   0x001cbe    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+          scan_key_matrix   0x001b32    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+     scan_key_matrix_demo   0x00221e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+   scan_key_matrix_update   0x001c90    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
                  setfloor   0x0015a6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-             start_timer0   0x00242a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer1   0x002570    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer2   0x00262c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer3   0x0026ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer0   0x002426    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer1   0x0025fc    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer2   0x002634    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer3   0x00277a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-                     test   0x002bfe    program     static                          
-               timer0_isr   0x00277e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer1_isr   0x00279a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer2_isr   0x0027b6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer3_isr   0x0027d2    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer0   0x0023fc    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer1   0x002542    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer2   0x0025fe    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer3   0x0026c0    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer0   0x0023f8    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer1   0x0025ce    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer2   0x002606    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer3   0x00274c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+                     test   0x002bd0    program     static                          
+               timer0_isr   0x002750    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer1_isr   0x00276c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer2_isr   0x002788    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer3_isr   0x0027a4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
                unsetfloor   0x001616    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
 update_next_priority_floor   0x0017ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
                  v_timer0   0x0000f8    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\lcd\lcd.c
-               zero_block   0x002dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x002d80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -569,90 +569,90 @@ update_next_priority_floor   0x0017ee    program     extern D:\Tai lieu BK\Ki 5\
                 Animation   0x001686    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
 update_next_priority_floor   0x0017ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
              run_Elevator   0x001980    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-          init_key_matrix   0x001b58    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-          scan_key_matrix   0x001b60    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-   scan_key_matrix_update   0x001cbe    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-          button_delay_ms   0x0021c4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-     scan_key_matrix_demo   0x00224c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
-              init_timer0   0x002372    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer0   0x002426    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer0   0x00242a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer1   0x0024b6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer1   0x002570    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer1   0x0025fc    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer2   0x002600    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer2   0x00262c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer2   0x002634    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              init_timer3   0x002638    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             start_timer3   0x0026ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-              stop_timer3   0x00277a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer0_isr   0x00277e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer1_isr   0x00279a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer2_isr   0x0027b6    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-               timer3_isr   0x0027d2    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             SetTimer0_ms   0x0027ee    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             SetTimer1_ms   0x002812    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-             SetTimer3_ms   0x002850    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
-           init_interrupt   0x00288e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-            init_ext_int0   0x002896    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-                  low_isr   0x00289e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-                 high_isr   0x002982    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
-              __string_14   0x002a52    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_13   0x002a62    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_12   0x002a72    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_11   0x002a82    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-              __string_10   0x002a92    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_9   0x002aa3    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_8   0x002ab4    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_7   0x002ac5    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_6   0x002ad6    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_5   0x002ad8    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_4   0x002ae9    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_3   0x002afa    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_2   0x002b0b    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_1   0x002b1c    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-               __string_0   0x002b2d    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
-                 FXD1616S   0x002b3e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x002b50    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x002b60    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x002b6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x002b6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x002b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD2424S   0x002b8a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x002ba0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D2424S   0x002bb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x002bbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x002bc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x002bda    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                _do_cinit   0x002be4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x002bfe    program     static                          
-                copy_loop   0x002c56    program     static                          
-            copy_one_byte   0x002c5c    program     static                          
-             done_copying   0x002c6a    program     static                          
-                     done   0x002c80    program     static                          
-       ___return_lbl00002   0x002c80    program     static                          
-                  FXM3232   0x002c82    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x002cf0    program     static                          
-                 FXD3232U   0x002cf2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x002d00    program     static                          
-                   _false   0x002d34    program     static                          
-       ___return_lbl00000   0x002d38    program     static                          
-                 FXD2424U   0x002d3a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                     loop   0x002d46    program     static                          
-                   _false   0x002d6e    program     static                          
-       ___return_lbl00000   0x002d72    program     static                          
-                 FXD1616U   0x002d74    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x002d7e    program     static                          
-                  endloop   0x002d9a    program     static                          
-       ___return_lbl00000   0x002d9e    program     static                          
-            __zero_memory   0x002da0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x002dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x002dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x002db6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x002db8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x002dc0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x002dd0    program     static                          
-       ___return_lbl00001   0x002dda    program     static                          
+          init_key_matrix   0x001b2a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+          scan_key_matrix   0x001b32    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+   scan_key_matrix_update   0x001c90    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+          button_delay_ms   0x002196    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+     scan_key_matrix_demo   0x00221e    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\button_matrix\button.c
+              init_timer0   0x002344    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer0   0x0023f8    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer0   0x0023fc    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer1   0x002488    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer1   0x002542    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer1   0x0025ce    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer2   0x0025d2    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer2   0x0025fe    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer2   0x002606    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              init_timer3   0x00260a    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             start_timer3   0x0026c0    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+              stop_timer3   0x00274c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer0_isr   0x002750    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer1_isr   0x00276c    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer2_isr   0x002788    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+               timer3_isr   0x0027a4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer0_ms   0x0027c0    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer1_ms   0x0027e4    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+             SetTimer3_ms   0x002822    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\timer\timer.c
+           init_interrupt   0x002860    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+            init_ext_int0   0x002868    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+                  low_isr   0x002870    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+                 high_isr   0x002954    program     extern D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\interrupt\interrupt.c
+              __string_14   0x002a24    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_13   0x002a34    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_12   0x002a44    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_11   0x002a54    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+              __string_10   0x002a64    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_9   0x002a75    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_8   0x002a86    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_7   0x002a97    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_6   0x002aa8    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_5   0x002aaa    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_4   0x002abb    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_3   0x002acc    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_2   0x002add    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_1   0x002aee    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+               __string_0   0x002aff    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
+                 FXD1616S   0x002b10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x002b22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x002b32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002b3c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x002b40    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x002b52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD2424S   0x002b5c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x002b72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x002b86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x002b90    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x002b94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x002bac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                _do_cinit   0x002bb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x002bd0    program     static                          
+                copy_loop   0x002c28    program     static                          
+            copy_one_byte   0x002c2e    program     static                          
+             done_copying   0x002c3c    program     static                          
+                     done   0x002c52    program     static                          
+       ___return_lbl00002   0x002c52    program     static                          
+                  FXM3232   0x002c54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x002cc2    program     static                          
+                 FXD3232U   0x002cc4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x002cd2    program     static                          
+                   _false   0x002d06    program     static                          
+       ___return_lbl00000   0x002d0a    program     static                          
+                 FXD2424U   0x002d0c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x002d18    program     static                          
+                   _false   0x002d40    program     static                          
+       ___return_lbl00000   0x002d44    program     static                          
+                 FXD1616U   0x002d46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x002d50    program     static                          
+                  endloop   0x002d6c    program     static                          
+       ___return_lbl00000   0x002d70    program     static                          
+            __zero_memory   0x002d72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x002d80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x002d80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x002d88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x002d8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x002d92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x002da2    program     static                          
+       ___return_lbl00001   0x002dac    program     static                          
                __config_0   0x300001    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
                __config_1   0x300002    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
                __config_2   0x300003    program     static D:\Tai lieu BK\Ki 5\Do an TKLL\Tuan2\Project_Elevator\main.c
